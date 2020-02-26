@@ -5,8 +5,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-size: auto;
-    font-family:Arial, Arial Black, Verdana, Trebuchet MS,Georgia, Tahoma, Courier
-        New, Times New Roman, sans-serif;
+    font-family: Arial, "Arial Black", Verdana, "Trebuchet MS",Georgia, Tahoma, "Courier New", "Times New Roman", sans-serif;
 }
 .header{
 
@@ -32,42 +31,48 @@ h1,h2 {
     background-color: darksalmon;
 }
 a:hover {
-  background-color: yellow;
+    background-color: yellow;
 }
 a {
     text-decoration: none;
 }
 [data-tab-content] {
-  display: none;
+    display: none;
 }
 
 .active[data-tab-content] {
-  display: block;
+    display: block;
 }
 .tabs {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
 }
 
 .tab {
-  cursor: pointer;
-  padding: 10px;
+    cursor: pointer;
+    padding: 10px;
 }
 
 .tab.active {
-  background-color: #CCC;
+    background-color: #CCC;
 }
 
 .tab:hover {
-  background-color: #AAA;
+    background-color: #AAA;
 }
 
 .tab-content {
-  margin-left: 20px;
-  margin-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+iframe{
+    width:90%;
+    height:90%;
+
+
 }
 
