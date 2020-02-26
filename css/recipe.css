@@ -6,7 +6,7 @@ body{
 	font-size:11pt;	
 	color:#404040;
 	padding: 0pt 40pt 0pt 40pt;
-	//background-image: linear-gradient(180deg,hsla(0,0%,100%,0) 60%,#fff),linear-gradient(70deg,#dbedff 32%,#ebfff0);
+	
 }
 a{
 	color:#A4A400;
@@ -63,10 +63,6 @@ footer{
 hr {
     display: block;
     unicode-bidi: isolate;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
     overflow: hidden;
     border-style: inset;
     border-width: 1px;
