@@ -20,11 +20,11 @@ h1 {
 h2,h3,h4,h5,h6 {
 	background-color:#F0F0F0;
 	color: #A4A400;
-	font-size:18 pt;
+	font-size:18pt;
 	font-weight:bold;
 	text-decoration:underline;
 	text-align:left;
-	text-emphasis:
+	
 	
 }
 footer{
@@ -54,4 +54,7 @@ footer{
 	}
 .divpad{
 	padding: 20pt 20pt 20pt 20pt;
+}
+.discul{
+	list-style-type:disc;
 }
