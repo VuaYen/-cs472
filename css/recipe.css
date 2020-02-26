@@ -46,7 +46,7 @@ footer{
 	background-color:#FF9;
 }
 .usercomment{
-	alignment-adjust:auto;
+	alignment-adjust:!important;
 	
 	}
 .doubles{
