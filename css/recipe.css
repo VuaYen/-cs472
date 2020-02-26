@@ -4,11 +4,27 @@ body{
 	background-color:white;
 	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
 	font-size:11pt;	
+	color:#404040;
 }
-h1,h2,h3,h4,h5,h6 {
+a{
+	color:#A4A400;
+	}
+h1 {
 	background-color:#F0F0F0;
+	color: #A4A400;
 	font-size:22pt;
 	font-weight:bold;
+	text-decoration:underline;
+	
+}
+h2,h3,h4,h5,h6 {
+	background-color:#F0F0F0;
+	color: #A4A400;
+	font-size:18 pt;
+	font-weight:bold;
+	text-decoration:underline;
+	text-align:left;
+	text-emphasis:
 	
 }
 footer{
@@ -16,7 +32,26 @@ footer{
 }
 .copyright{
 	text-align:right;
+	padding-top: 3em;
 	
 }
 
-
+.mainhead{
+	text-align:center;
+}
+.boldli{
+	font-weight:bold;
+}
+.comment{
+	background-color:#FF9;
+}
+.usercomment{
+	alignment-adjust:auto;
+	
+	}
+.doubles{
+	text-decoration:line-through;
+	}
+.divpad{
+	padding: 20pt 20pt 20pt 20pt;
+}
