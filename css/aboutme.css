@@ -1,27 +1,41 @@
 @charset "utf-8";
 /* CSS Document */
 body {
-                background-color: rgba(0, 0, 0, 0.4);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-size: auto;
-				font-family:Arial, Arial Black, Verdana, Trebuchet MS,Georgia, Tahoma, Courier
-New, Times New Roman, sans-serif;
-            }
-            .header{
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: auto;
+    font-family:Arial, Arial Black, Verdana, Trebuchet MS,Georgia, Tahoma, Courier
+        New, Times New Roman, sans-serif;
+}
+.header{
 
-                background-color: rgba(0, 0, 0, 0.4);
-                background-size: contain;
-                background-size: auto;
-            }
-            footer{
-                background-color: rgba(0, 0, 0, 0.4);
-                background-size: contain;
-                background-size: auto;
-            }
-			.interest{ color:#CF0;
-			}
-			h1,h2 {
-				color:#CF0;
-			}
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: contain;
+    background-size: auto;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: contain;
+    background-size: auto;
+}
+.interest{ color:#CF0;
+}
+h1,h2 {
+    color:#CF0;
+}
+.myDropcap {
+    font-size: 50px;
+    line-height: 1.4em;
+    font-weight: bold;
+    vertical-align: middle;
+    background-color: darksalmon;
+    padding: 1 8px;
+}
+a:hover {
+  background-color: yellow;
+}
+a {
+    text-decoration: none;
+}
 
