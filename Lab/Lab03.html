@@ -4,13 +4,43 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html lang="en">
     <head>
-        <title>Lab03</title>
+        <title>Lab03 Retrieve Grade</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/retrievegrade.css">
     </head>
     <body>
-        <div>TODO write content</div>
+       <h1>Retrieve your grade</h1>
+       <form action="http://mumstudents.org/params.php" method="get">
+       <fieldset class="formgrade">
+       <legend>Retrieve your grade </legend>
+      
+       <p> Name: <input type="text" name="name" placeholder="input your name here!"></p>
+		<p> Student ID: <input type="text" name="studentid" placeholder="input your StudentID"></p>
+        <p > Assignment: <select name="assignment">
+        <option >My Homepage Lab </option>
+        <option> About Me Lab</option>
+        <option>Grades Exercises</option>
+         <option>Homework 1: Recipe</option>
+          <option selected>Homework 2: Movie Review</option>
+        
+        </select> </p>
+        <p>Security Code: <input type="password" name="security_code" placeholder="input your security code here!"></p>
+        <fieldset class="studenentry">
+        <legend>Student Entry</legend>
+        <label><input type="radio" name="studententry" value="feb2019"> Feb 2019 </label>
+        <label><input type="radio" name="studententry" value="may2019" > May 2019 </label>
+        <label><input type="radio" name="studententry" value="aug2019"> Aug 2019 </label>
+        <label><input type="radio" name="studententry" value="nov2019" checked> Nov 2019 </label>
+        </fieldset>
+        <p><input type="checkbox" name="confirm"> confirm that you are not lying and really
+only looking up your own grade</p>
+        <input type="submit" name="submit" value=" Get Grade!">
+         </fieldset>
+       </form>
+
+ 
     </body>
 </html>

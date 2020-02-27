@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+.formmain{
+	width: fit-content;
+	border-radius:10px;
+	}
+
+legend{
+	border:2px gray;
+}
+.validation{
+	position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.5;
+}
