@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    background-color:#FF9;
+    background-image:url(../images/background.png);
+    font-family:Verdana, Tahoma, serif;
+	font-size:8pt;
+    background-size:auto;
+    background-repeat:repeat;
+	margin: 0px;
+    padding: 0px;
+
+}
+.main{
+    width:1028px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.header{
+    
+	text-align: center;
+    background-image: url(../images/bannerbg.png);
+}
+.titlef{
+    text-align:center;
+	font-size:24pt;
+	font-weight:bold;
+	color:#999999;
+	text-shadow:3px 3px #CCC;
+}
+.content{
+    margin-left:auto;
+    margin-right:auto;
+    width:80%;
+    border:3px solid #CCCCCC;
+    border-radius:20px;
+    
+}
+.contentleft{
+    width:70%;
+    float:left;
+	padding-top: 0px;
+	padding-right:0px;
+	max-width:800px;
+}
+.contentlefthead{
+    background-image:url(../images/rbg.png);
+    background-repeat:repeat-x;
+    width:100%;
+	border:4px gray;
+	border-radius: 20px 0px 0px;
+}
+.imghead{
+	border:4px gray;
+	border-radius: 20px 0px 0px;
+}
+.contentleftcol1{
+    float:left;
+    width:47%;
+	padding:0px 5px 5px 5px;
+}
+.contentleftcol2{
+    float:right;
+    width:47%;
+	padding:0px 5px 5px 5px;
+}
+.contentright{
+    width:30%;
+    float:right;
+	font-family: Arial, sans-serif;
+	font-size:8pt;
+    background-color:#A2B964;
+	border-radius: 0px 20px 0px 0px;
+	max-width: 250px;
+    
+}
+.contentbottom{
+    background-color:#A2B964;
+    column-span:all;
+	 clear: both;
+	 text-align:center;
+	 border-radius: 0px 0px 20px 20px;
+	
+
+}
+.text33 span{
+	color:red;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:48pt;
+	font-weight:bold;
+	    
+}
+img.comment1{
+	float:left;
+}
+.comment2 {
+	background-color: #E8DC9B;
+	border: gray 2px solid;
+	border-radius: 10px;
+	padding: 6px;
+	font-size: 10pt;
+	margin-bottom: 15pt;
+	margin-left: 0px;
+	margin-right: 5px;
+	margin-top: 18pt;
+}
+
+.imgf{
+	border-radius: 0px 20px 0px 0px;
+	float:right;
+}
+.validation{
+	position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.5;
+}
+dl{
+	    padding: 10pt;
+		font-weight:bold;
+    }
+dt{
+	padding-top:5px;
+}
+ul{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	}
