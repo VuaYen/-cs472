@@ -6,6 +6,7 @@ body{
 	font-size:11pt;	
 	color:#404040;
 	padding: 0pt 40pt 0pt 40pt;
+	background-image: url("../images/silverware.jpg");
 	
 }
 a{
@@ -66,4 +67,7 @@ hr {
     overflow: hidden;
     border-style: inset;
     border-width: 1px;
+}
+ul{
+    list-style-image: url("../images/pie_icon.gif");
 }

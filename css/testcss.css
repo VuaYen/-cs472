@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+.a{
+	color:red;
+}
+.b{
+	background-color:yellow;
+}
+.a.b{
+	font-weight:bold;
+	text-align:center;
+}
+.a .c{
+	font-weight:bold;
+	text-align:center;
+}
