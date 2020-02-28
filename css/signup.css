@@ -35,10 +35,3 @@ input[type="submit"] {
     font-weight: bold;
     border-radius:10px;
 }
-#name{
-    size:20;
-    maxlength:16;
-}
-#age{
-    maxlength:6;
-}
