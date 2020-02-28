@@ -1,70 +1,81 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Homework 4: NerdLuv</title>
-<link rel="stylesheet" type="text/css" href="../css/signup.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Homework 4: NerdLuv</title>
+        <link rel="stylesheet" type="text/css" href="../css/signup.css">
+    </head>
 
-<body>
-<div><form action="http://mumstudents.org/params.php" method="get" name="newusersignup">
-<fieldset class="formmain"><legend> New User Signup:</legend>
-<table >
-  <tr>
-    <td>Name:</td>
-    <td>
-      <input type="text" name="name" id="name"></td>
-  </tr>
-  <tr>
-    <td>Gender:</td>
-    <td><label for="radio"><input type="radio" name="gender" id="radio" value="male" checked>Male</label>
-      <label for="radio2"> 
-        <input type="radio" name="gender" id="radio2" value="Female">
-        Female </label></td>
-  </tr>
-  <tr>
-    <td>Age:</td>
-    <td>
-      <input type="text" name="age" id="age"></td>
-  </tr>
-  <tr>
-    <td>Personality type :</td>
-    <td>
-      <input type="text" name="personality_type" id="personality_type"> 
-      (Don't know your type ?)</td>
-  </tr>
-  <tr>
-    <td>Favortite OS:</td>
-    <td>
-      <select name="select" id="select">
-      <option selected>Windows OS</option>
-      <option>Mac OS</option>
-      <option>Ubuntu</option>
-      </select></td>
-  </tr>
-  <tr>
-    <td>Seeking Age:</td>
-    <td> 
-      <input type="text" name="min" id="min" placeholder="min">
-      to 
-      
-      <input type="text" name="max" id="max" placeholder="max"></td>
-  </tr>
-  <tr>
-    <td><input type="submit" name="submit" id="submit" value="Sign Up"></td>
-    <td>&nbsp;</td>
-  </tr>
-</table>
+    <body>
+        <div class="main">
+            <img src="../images/logosignup.jpg" alt="logo nerdluv" >
+            <form action="http://mumstudents.org/params.php" method="get" name="newusersignup">
+                <fieldset class="formmain"><legend> New User Signup:</legend>
+                    <table >
+                        <tr>
+                            <td>Name:</td>
+                            <td>
+                                <input type="text" name="name" id="name" size="16" maxlength="36"></td>
+                        </tr>
+                        <tr>
+                            <td>Gender:</td>
+                            <td><label for="radio"><input type="radio" name="gender" id="radio" value="male" checked>Male</label>
+                                <label for="radio2"> 
+                                    <input type="radio" name="gender" id="radio2" value="Female">
+                                    Female </label></td>
+                        </tr>
+                        <tr>
+                            <td>Age:</td>
+                            <td>
+                                <input type="text" name="age" id="age" size="6" maxlength="6"></td>
+                        </tr>
+                        <tr>
+                            <td>Personality type :</td>
+                            <td>
+                                <input type="text" name="personality_type" id="personality_type" size="6" maxlength="6" placeholder="ESTJ"> 
+                                <a href="http://www.humanmetrics.com/cgi-win/JTypes2.asp" class="typeperson">(Don't know your type?)</a></td>
+                        </tr>
+                        <tr>
+                            <td>Favortite OS:</td>
+                            <td>
+                                <select name="select" id="select">
+                                    <option selected>Windows OS</option>
+                                    <option>Mac OS</option>
+                                    <option>Ubuntu</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td>Seeking Age:</td>
+                            <td> 
+                                <input type="text" name="min" id="min" placeholder="min" size="6" maxlength="3">
+                                to 
+
+                                <input type="text" name="max" id="max" placeholder="max" size="6" maxlength="3"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" name="submit" id="submit" value="Sign Up"></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
 
 
-</fieldset>
-</form></div>
- <div class="validation"> 
-            <a href="https://validator.w3.org/nu/?doc=https://vuayen.github.io/cs472/HomeWork/signup.html"> <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator"></a> <br>
+                </fieldset>
+            </form>
+            <div>
+                <p>This page is for single nerds to meet and date each other! Type in your personal information and wait for the nerdly luv to begin! Thank you for using our site.</p>
+                <p>Results and page &copy; Copyright NerdLuv Inc. </p>
+                <p class="backhome"> <a href="../index.html" ><img src="../images/back.png"   alt=" back to home"/> Back to front page </a></p>
+                <p>
+                    <a href="https://validator.w3.org/nu/?doc=https://vuayen.github.io/cs472/HomeWork/signup.html"> <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator"></a>
+                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://vuayen.github.io/cs472/HomeWork/signup.html"><img src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png" alt="css validator"></a>
 
-            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://vuayen.github.io/cs472/HomeWork/signup.html"><img src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png" alt="css validator"></a>
-            <br>
-            <a href="../index.html" class="comment1"><img src="../images/rotten.gif" width="25" height="25"  alt=""/> Home</a>
+                    <a href="../index.html" class="comment1"><img src="../images/rotten.gif"  alt=""/> Home</a>
+                </p>
+            </div>
+
         </div>
-</body>
+        <div class="validation"> 
+
+        </div>
+    </body>
 </html>
