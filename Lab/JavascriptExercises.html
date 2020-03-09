@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Javascript Exercises </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <h1>Javascript Exercises </h1>
+        <div>
+          <p>1.   What is the difference between the following 2 statements?</p>
+          <p>setTimeout(<em>booyah</em>, 2000); </p>
+          <p>setTimeout(<em>booyah()</em>, 2000); </p>
+          <p> Answer: The second answer is  run immediately without waitting for 2000ms.</p>
+          
+          <p>2.   What do the following 2 alerts display (answer without running the code)?</p>
+         
+          <p>var myfunc = function(a, x) {   return a * x; </p>
+          <p>}; </p>
+          <p>var x = myfunc(2, 3); var y = myfunc; alert(x); alert(y(2,3));  </p>
+          <p> Answer: 6 </p>
+         
+          <p>3.   Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that says &ldquo;BOOYAH!&rdquo;</p>
+         
+          <p>setTimeout(<em>booyah1</em>, 2000); setTimeout(<em>booyah2()</em>, 2000);</p>
+          <p>Answer:</p>
+          <p>a.      The first Function</p>
+          <p>function booyah1() { alert("BOOYAH"); } </p>
+          <p>b.      The second Function</p>
+          <p>function booyah2() { setTimeout(booyah1, 2000); } </p>
+          
+          <p>4.   What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons for using it)?</p>
+          <p>Answer:</p>
+          <p>Unobtrusive Javascript allows separation of website into 3 major categories:</p>
+          <p>Content (HTML) What is it?</p>
+          <p>Presentation (CSS) how does it look?</p>
+          <p>Behavior (Javascript) How does it respond to user interaction?</p>
+          <p>The main reason is that remove all JavaScript code from the HTML body. Its main application is to facilitate progressive enhancement and separation of functionality from content/presentation.</p>
+</div></body>
+</html>

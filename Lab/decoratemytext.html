@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Text Decorator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/decoratemytext.css">
+		<script src="../js/decoratemytext.js"></script>
+    </head>
+    <body id="body">
+       <h1>Text Decorator</h1>
+		
+		<div>
+			<img src="../images/decorated.gif" alt="very decorated!" />
+		</div>
+        <div>
+        <div>
+    <fieldset>
+        <legend>Text</legend>
+        <label><textarea rows="4" cols="30" id="area">
+        </textarea>
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Decoration</legend>
+        <button onclick="delayMessage();">Bigger Decorations</button> <button onclick="malkovich();"> Malkovich</button> <br>
+       <label> <input type="checkbox" id="checkbx" onchange="myDecoration2();"> Bling</label>
+    </fieldset>
+</div>
+        </div>
+    </body>
+</html>
