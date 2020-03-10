@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Scope Exercises</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+          <h1>Javascript Scope Exercises</h1>
+            <hr>
+            <ol>
+            <li>Determine what this Javascript code will  print out (without running it):</li> <br>
+            <br>
+            x =  1;  var a = 5;   var b = 10; <br>
+            var c = function(a, b, c) { <br>
+            var x = 10;               document.write(x);                      document.write(a); <br>
+            var f  = function(a, b, c) { <br>
+            b  = a; <br>
+            document.write(b); <br>
+            b  = c; <br>
+            var  x = 5; <br>
+            } <br>
+            f(a,b,c); <br>
+            document.write(b); <br>
+            } <br>
+            c(8,9,10); document.write(b); <br>
+            document.write(x);  <br>
+            } <br>
+            <br>
+            Answer: 10 8 8 9 10  1</p>
+         
+            <li>What is the difference between a method and  function? </li>
+          
+          <p> Answer: Function is  a set of code to do some task in JavaScript. Method is also a function which is  used as a property in Object.</p>
+         
+            <li>What does 'this' refer to when used in a Java  method? </li>
+          
+          <p> Answer: It might  refer to the class itself, the methods of the class or the private instance  variables of the class.</p>
+          
+            <li>What does 'this' refer to when used in a  JavaScript method? </li>
+                    <p> Answer: It refers to  the &quot;owner&quot; of the method.</p>
+          
+            <li>What does 'this' refer to when used in a  JavaScript constructor function? </li>
+         
+          <p> Answer: The keyword  this inside the constructor function points to the newly created object.</p>
+          
+            <li>Assume object <em>x</em> is the prototype for object <em>y</em> in Javascript. Object <em>x</em> has a method <em>f</em>( ) containing keyword 'this'. When <em>f</em> is called by <em>x</em>.<em>f</em>( ), what does 'this'  refer to? </li>
+         
+          <p> Answer: It first  refers to x(own), if property is not found it might refer to y(inherited)  property.</p>
+          
+            <li>What is a free variable in JavaScript? </li>
+         
+          <p> Answer: Free  variables are simply the variables that are neither locally declared nor passed  as parameter.</p>
+         
+            <li>Create an object that has properties with name  = &quot;fred&quot; and major=&quot;music&quot; and a property that is a  function  that takes 2 numbers and  returns the smallest of the two, or the square of the two if they are equal. </li>
+          
+          <p> Answer: <br>
+            var x={<br>
+            name:fred,<br>
+            major:music,<br>
+            compare: function(a,b) {<br>
+            if(a===b) { return (a+b)*(a+b); }<br>
+            else {<br>
+            if(a&gt;b) return b;<br>
+            else return a;<br>
+            }<br>
+            };<br>
+            }; </p>
+          
+            <li>Write Javascript code for creating three <em>Employee</em> objects using the  &quot;new&quot; keyword and a constructor function. <em>Employee</em> objects have the following fields:  name, salary, position. </li>
+         
+          <p> function Employee(name, salary,  position) {<br>
+            this.name=name;<br>
+            this.salary=salary;<br>
+            this.position=position;<br>
+            }<br>
+            var Wuletaw = new Employee(&quot;Wuletaw Adane&quot;, 120000,  &quot;Software Developer&quot;);<br>
+            var Dawit = new Employee(&quot;Dawit Molla&quot;, 135000,  &quot;Senior Software Developer&quot;);<br>
+            var Henok = new Employee(&quot;Henok Alemu&quot;, 160000,  &quot;Manager&quot;); </p>
+          
+            <li>Write a Javascript function that takes any  number of input arguments and returns the product of the arguments. </li>
+         
+          <p> function product() {<br>
+            let p=1;<br>
+            for(let i=0; i&lt;arguments.length; i++) {<br>
+            p*=arguments[i];<br>
+            }<br>
+            return p;<br>
+            } </p>
+          
+            <li>Write an arrow function that returns the  maximum of its three input arguments.</li>
+         </ol>
+          <p>var max=(a, b, c) =&gt; { if (a &gt;=  b &amp;&amp; a &gt;= c) return a;<br>
+            else if (b &gt;= a &amp;&amp; b &gt;= c) return b;<br>
+            else return c;<br>
+            } </p>
+        </div>
+    </body>
+</html>
