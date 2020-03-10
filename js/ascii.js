@@ -1,6 +1,7 @@
 (function () {
     "use strict";
     let i = 0;
+	let j=1;
     /**Set the text area fontsize*/
     function fontsize() {
         let getFontSelect = document.getElementById("fontSelect").value;
@@ -66,6 +67,13 @@
                 i++;
             } else {
                 i = 0;
+            }
+			j= i+1;
+			if (j < exercise.length) {
+                getArea2.value = exercise[j];
+                j++;
+            } else {
+                j = 0;
             }
         } else if (getAnimSelect === "juggler") {
             let juggler = window.JUGGLER.split("=====\n");
