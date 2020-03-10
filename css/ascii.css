@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:#CCCCFF;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14pt;	
+	color:#404040;
+	font-weight:bold;
+	
+}
+
+h1 {
+	color: #A4A400;
+	font-size:32pt;
+	font-weight:bold;
+	margin:0;
+	text-align: center;
+	
+}
+textarea{
+    margin-left: 5%;
+    width: 90%;
+    height:400px;
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: monospace;
+}
+fieldset{
+    margin: auto;
+    display: inline-block;
+    border:5px black solid;
+}
+footer{
+	text-align:right;
+	float:right
+}
+
+.div2{
+    margin-left: 28%;
+}
