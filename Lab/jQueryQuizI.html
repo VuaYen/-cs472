@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>jQuery Quiz I</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+		.answer{
+			font-weight:bold;
+			color:blue;
+		}
+        
+        </style>
+    </head>
+    <body>
+    <h1>jQuery Quiz I</h1>
+    <hr>
+   
+        <div> <ol>
+        <li> In jQuery terminology, what is the difference between the &ldquo;jQuery function&rdquo; and the &ldquo;jQuery object&rdquo;?<br></li>
+        <p class="answer">   Answer: The jQuery function refers to the global jQuery function/object or the $ function depending on the context. jQuery object is
+    the object returned by the jQuery function that often represents a group of elements</p>
+         <li> Write jQuery code to find all h1 elements that are children of a div element and make their background<br></li>
+          color red.<br>
+          Sample HTML:<br>
+          &lt;body&gt;<br>
+          &lt;h1&gt;abc&lt;/h1&gt;&lt;br&gt;&lt;div&gt;<br>
+          &lt;h1&gt;div-1&lt;/h1&gt;<br>
+          &lt;h1&gt;div-2&lt;/h1&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;h1&gt;xyz&lt;/h1&gt;<br>
+          &lt;/body&gt;<br>
+          <p class="answer">   Answer: <pre>
+    $(document).ready(function(){
+         $("div h1").css("background-color","red");
+    });
+         </pre>
+          <li>Use a jQuery method to insert the text "YES!" at the end of the &lt;p&gt; element.<br></li>
+          &lt;!DOCTYPE html&gt;<br>
+          &lt;html&gt;<br>
+          &lt;head&gt;<br>
+          &lt;script&gt;<br>
+          &lt;!—INSERT YOUR JQUERY CODE HERE - - &gt;<br>
+          &lt;/script&gt;<br>
+          &lt;/head&gt;<br>
+          &lt;body&gt;<br>
+          &lt;p&gt;Is jQuery FUN or what? &lt;/p&gt;<br>
+          &lt;/body&gt;<br>
+          &lt;/html&gt; <br>
+          <p class="answer">   Answer: </pre>
+
+<pre>
+$(document).ready(function() {
+    $("p").append("YES!");
+});
+</pre></p>
+          </ol>
+        </div>
+    </body>
+</html>

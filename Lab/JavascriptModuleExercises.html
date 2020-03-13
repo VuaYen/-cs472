@@ -75,13 +75,16 @@ and open the template in the editor.
           
             <li>Consider the following structure of  Javascript code: </li>
           
-          <p> <br>
-            //  Scope A  function XFunc () {  <br>
-            //  Scope B     function YFunc () {  <br>
-            // Scope C  <br>
-            };  <br>
-            }; <br>
-          </p>
+        <pre>
+        // Scope A  
+        function XFunc () {  
+ 	// Scope B   	
+    	function YFunc () {  
+ 	 	// Scope C  
+ 	};  
+}; 
+
+        </pre>
           <ol type="a">
             <li>Do statements in Scope A have access  to variables defined in Scope B and C? </li><p class="answer">   Answer: No</p>
             <li>Do statements in Scope B have access  to variables defined in Scope A? </li><p class="answer">   Answer: Yes</p>
