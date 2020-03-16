@@ -10,7 +10,7 @@ window.onload = function () {
         let x = ((i % 4) * 100) ;
         let y = (Math.floor(i / 4) * 100) ;
         // set basic style and background
-        $(this).addClass("puzzlepiece").css({"left":x + 'px',"top": y + 'px',"background-image":'url("background.jpg")',"background-position":-x + 'px ' + (-y) + 'px'});
+        $(this).addClass("puzzlepiece").css({"left":x + 'px',"top": y + 'px',"background-image":'url("../images/background.jpg")',"background-position":-x + 'px ' + (-y) + 'px'});
 
         $(this).mouseover(function()  {
             if (isMoveable(parseInt($(this).html()))) {
