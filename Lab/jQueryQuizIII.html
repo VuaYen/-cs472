@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>jQuery Quiz III</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+		.answer{
+			font-weight:bold;
+			color:blue;
+		}
+        
+        </style>
+    </head>
+    <body>
+    <h1>jQuery Quiz III</h1>
+    <hr>
+   
+        <div> <ol>
+        <li> Find the text in the first paragraph (stripping out the html), then set the html of the last paragraph to show it is just text (the red bold is gone).</li>
+        <pre >&nbsp;    </pre>
+        <p>&lt;!doctype html&gt; <br>
+  &lt;html lang=&quot;en&quot;&gt; <br>
+  &lt;head&gt; <br>
+  &lt;meta  charset=&quot;utf-8&quot;&gt; <br>
+  &lt;title&gt;text  demo&lt;/title&gt; <br>
+  &lt;style&gt; p { color: blue;  margin: 8px; <br>
+          } span { color: red; } <br>
+  &lt;/style&gt; <br>
+  &lt;script  src=&quot;http://code.jquery.com/jquery-1.9.1.js&quot;&gt;&lt;/script&gt; <br>
+  &lt;/head&gt; <br>
+  &lt;body&gt; <br>
+  &lt;p&gt;&lt;span&gt;Test&lt;/span&gt;  Paragraph.&lt;/p&gt; <br>
+  &lt;p&gt;&lt;/p&gt; <br>
+  &lt;script&gt; <br>
+          <br>
+  &lt;!—INSERT YOUR JQUERY CODE  HERE  - - &gt; <br>
+          <br>
+  &lt;/script&gt; <br>
+  &lt;/body&gt; <br>
+  &lt;/html&gt; </p>
+<p class="answer">   Answer: $(document).ready(function(){
+         $("span").detach();
+         $("p").last().text($("p").first().text());
+    });</p>
+         <li> Write jQuery code to create a red background for the level-2 list items.</li>
+          <pre> 
+          <p>&lt;ul  class=&quot;level-1&quot;&gt; <br>
+            &lt;li class=&quot;item-i&quot;&gt;I&lt;/li&gt; <br>
+            &lt;li class=&quot;item-ii&quot;&gt;II <br>
+            &lt;ul class=&quot;level-2&quot;&gt; <br>
+            &lt;li  class=&quot;item-a&quot;&gt;A&lt;/li&gt; <br>
+            &lt;li class=&quot;item-b&quot;&gt;B <br>
+            &lt;ul class=&quot;level-3&quot;&gt; <br>
+            &lt;li  class=&quot;item-1&quot;&gt;1&lt;/li&gt; <br>
+            &lt;li  class=&quot;item-2&quot;&gt;2&lt;/li&gt; <br>
+            &lt;li  class=&quot;item-3&quot;&gt;3&lt;/li&gt; <br>
+            &lt;/ul&gt; <br>
+            &lt;/li&gt; <br>
+            &lt;li  class=&quot;item-c&quot;&gt;C&lt;/li&gt; <br>
+            &lt;/ul&gt; <br>
+            &lt;/li&gt; <br>
+            &lt;li class=&quot;item-iii&quot;&gt;III&lt;/li&gt; <br>
+  &lt;/ul&gt; </p></pre>
+<p class="answer">   Answer: <pre>
+     $(document).ready(function(){
+          $("ul.level-2").each(function(idx,e){
+          $(e).css("background-color","red");
+          });
+    });
+         </pre>
+          <li>Write jQuery code to select the element that comes immediately before item three and change its background color to blue</li>
+          <pre>&nbsp;    </pre>
+          <p>&lt;ul&gt; <br>
+            &lt;li&gt;list item 1&lt;/li&gt; <br>
+            &lt;li&gt;list item 2&lt;/li&gt; <br>
+            &lt;li class=&quot;third-item&quot;&gt;list item 3&lt;/li&gt; <br>
+            &lt;li&gt;list item 4&lt;/li&gt; <br>
+            &lt;li&gt;list item 5&lt;/li&gt; <br>
+  &lt;/ul&gt; </p>
+<p class="answer">   Answer: 
+  
+<pre>
+ $(document).ready(function(){
+         $(".third-item").prev().css("background-color","blue");
+    });
+
+</pre></p>
+<li>Let us one additional requirement for the "Go Vegetarian" button of the Webville Eatery Menu described in Chapter 4 of Head First jQuery:  "Turkey" in the ingredient list of any entree is replaced by "Mashed Potatoes" in the vegetarian version. You may assume there is a class "turkey" that identifies these items in the list. Describe the changes to the Javascript (jQuery) code to implement this new requirement. </li>
+<p class="answer">   Answer: In my opinion, we need detach turkey class and save it with some variable then replace With "Mashed Potatoes" for the vegetarian version.</p>
+<li>Write Javascript (jQuery) code to change the color of the parent and grandparent list items of the span of text ("some text") in the following to green</li>
+<pre>
+<p>&lt;!DOCTYPE html&gt; <br>
+  &lt;html&gt; <br>
+  &lt;head&gt; <br>
+  &lt;script&gt; <br>
+  $(document).ready(function(){ <br>
+  <br>
+  &lt;!—INSERT YOUR JQUERY CODE  HERE  - - &gt; <br>
+  <br>
+  }); <br>
+  &lt;/script&gt; <br>
+  &lt;/head&gt; <br>
+  &lt;body&gt; <br>
+  <br>
+  &lt;div  class=&quot;ancestors&quot;&gt; <br>
+  &lt;div&gt; (great-grandparent) <br>
+  &lt;ul&gt; (grandparent)   <br>
+  &lt;li&gt; (direct parent)          &lt;span&gt;some text&lt;/span&gt; <br>
+  &lt;/li&gt; <br>
+  &lt;/ul&gt;    <br>
+  &lt;/div&gt; <br>
+  &lt;/div&gt; <br>
+  <br>
+  &lt;/body&gt; <br>
+  &lt;/html&gt;  </p>&nbsp;    </pre>
+<p class="answer">   Answer: $(document).ready(function(){
+    <br>    $("span").parentsUntil("div").css("color","green");<br>
+    });</p>
+
+          </ol>
+        </div>
+    </body>
+</html>

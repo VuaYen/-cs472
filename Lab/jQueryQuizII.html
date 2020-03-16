@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>jQuery Quiz II</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+		.answer{
+			font-weight:bold;
+			color:blue;
+		}
+        
+        </style>
+    </head>
+    <body>
+    <h1>jQuery Quiz II</h1>
+    <hr>
+   
+        <div> <ol>
+          <li>Which, if any, of the following 3  code fragments are equivalent? Explain why they are different, if they are.  Explain why they can have different parameters and be equivalent, if they are  equivalent.  </li>
+        
+          <p> <pre>
+          //code fragment 1  
+$("li").each(function(idx, e) {  
+    $(e).css(“color”, “yellow”); });  
+ 
+//code fragment 2  
+$("li").each(function() {  
+    $(this).css(“color”, “yellow”); });  
+ 
+//code fragment 3  
+$("li").each(function(idx) {      $(this).css(“color”, “yellow”); }); 
+
+          </pre>
+
+  <p class="answer">   Answer: They are equal, and this refers to the same thing. Each member elements in li. And idx is the index, which serve no purpose in the three code fragments</p>
+  <li>Write a jQuery expression to find all divs on a page that include an unordered list in them, and make their text color be blue. </li>
+  <pre>&nbsp;    </pre>
+  <p>&lt;div&gt;no ul here  &lt;/div&gt; <br>
+    &lt;div&gt; <br>
+    This does contain a ul. <br>
+    &lt;ul&gt; <br>
+    &lt;li&gt;the first  item&lt;/li&gt; <br>
+    &lt;li&gt;the second  item&lt;/li&gt; <br>
+    &lt;/ul&gt; <br>
+    &lt;/div&gt; <br>
+    &lt;script&gt; <br>
+    <br>
+    &lt;!—INSERT  YOUR JQUERY CODE HERE  - - &gt; <br>
+    <br>
+    &lt;/script&gt; <br>
+    &lt;/body&gt; </p>
+<p class="answer">   Answer: $("div").has("ul").css("color","blue"); </p>
+  <li>Write jQuery code to append the following div element (and all of its contents) dynamically to the body element.</li>
+  <pre>
+  <p>&lt;div&gt;&lt;h1&gt;JQuery  Core&lt;/h1&gt;&lt;/div&gt; <br>
+    <br>
+    HTML: <br>
+    &lt;!DOCTYPE html&gt;   <br>
+    &lt;html&gt;   <br>
+    &lt;head&gt;   <br>
+    &lt;meta  charset=&quot;utf-8&quot;&gt;   <br>
+    &lt;title&gt;JS Bin&lt;/title&gt;   <br>
+    &lt;/head&gt;   <br>
+    &lt;body&gt;   <br>
+    <br>
+    &lt;/body&gt;   </p>
+    &lt;/html&gt;</pre>
+<p class="answer">   Answer: 
+  
+$(&quot;body&quot;).append(&quot;&lt;div&gt;&lt;h1&gt;JQuery  Core&lt;/h1&gt;&lt;/div&gt;&quot;);</p>
+</ol>
+        </div>
+</body>
+</html>
